@@ -8,7 +8,7 @@ const color = document.querySelector('#colorPicker').value;
 const submit = document.querySelector('#submit');
 
 // When size is submitted by the user, call makeGrid()
-submit.addEventListener('click' makeGrid(height, width));
+submit.addEventListener('click', makeGrid);
 
 //Make function makeGrid()
 function makeGrid(height, width) {
@@ -16,11 +16,11 @@ function makeGrid(height, width) {
   for (let n = 0; n < height; n++) {
     const row = document.createElement('tr');
     const table = document.querySelector('#pixelCanvas');
-    table.appendChild('row');
+    document.table.appendChild(row);
   };
   //Add cells
   for (let m = 0; m < width; m++) {
-    const cell = document.createElement('tr');
-    row.appendChild('cell');
+    const cell = document.createElement('td');
+    row.appendChild(cell);
   }
 };
